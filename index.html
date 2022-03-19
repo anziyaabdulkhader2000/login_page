@@ -1,0 +1,58 @@
+    <!DOCTYPE html>
+    <html>
+        <head>
+                <title>
+                    Full stack js
+                </title>
+              <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+                <div class="nav">
+                    <h2>JAVASCRIPT</h2>
+                </div>
+                <div class="login-box">
+                    <h1>Login</h1>
+                    <form>
+                        <input id="username" type="text" placeholder="username" class="input1"/>
+                        <input id="password" type="password" placeholder="password" class="input1" />
+                        
+                            <p hidden="true" id="alert" class="alert">password must be 8 letters<p>
+                        
+                        <button onclick="formValidator()" type="button" class="login-btn"> login</button>
+                       
+                    </form>
+                </div>
+                <script>
+                    function formValidator() {
+                        
+                        var usr_input=document.getElementById("username")
+                        var pass_input=document.getElementById("password")
+                        var alert_input=document.getElementById("alert")
+
+                                if(pass_input.value.length == 0 && usr_input.value.length == 0) {
+                                    alert_input.hidden=false;
+                                    alert_input.innerText="username is required \n  password is required";
+                                  
+                                }
+                                else if(pass_input.value.length == 0) {
+                                    alert_input.hidden=false;
+                                    alert_input.innerText="password is required";
+                                }
+                               else if (usr_input.value.length == 0){
+                                    alert_input.hidden=false;
+                                    alert_input.innerText="username is required";
+
+                                }
+                                else{
+                                    alert_input.hidden=true;
+                                    alert_input.innerText="";
+                                }
+                               
+                                
+                            
+                            
+
+                    }
+                    </script>
+        </body>
+    </html>

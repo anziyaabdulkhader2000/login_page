@@ -1,0 +1,67 @@
+html,body,*{
+    margin: 0;
+    padding: 0;
+}
+
+.input1{
+    background: #FFFFFF;
+    border: 1px solid #DCDDFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 8px rgba(156, 166, 255, 0.17);
+    border-radius: 12px;
+    width: 100%;
+    margin-top: 19px;
+    padding: 10px 20px;
+}
+.nav{
+    background: #9CA6FF;
+    box-shadow: 0px 4px 4px #DCDDFF;
+    padding: 5px 5px;
+    text-align: center;
+}
+.login-box{
+    filter: drop-shadow(0px 4px 25px rgba(94, 100, 255, 0.19));
+    border-radius: 10px;
+    width: 400px;
+    padding: 10px;
+    margin-top: 115px !important;
+    margin: auto;
+    text-align: center;
+    background: white;
+}
+.login-box-h1{
+    margin-top: 15px;
+}
+.login-btn {
+    background: #252eff;
+    border-radius: 10px;
+    padding: 10px 63px;
+    border-width: 0;
+    color: white;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    margin-top: 41px;
+    margin-bottom: 50px;
+}
+@media screen and ( max-width: 400px ){
+    .nav{
+        text-align: left;
+    }
+
+}
+
+.alert{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 15px;
+text-align: left;
+color: #FF5487;
+margin-top: 10px;
+}
+    
+
